@@ -10,6 +10,9 @@ module.exports = {
         // for babel-eslint
         "strict": 0,
 
+	// for windows installation
+	"linebreak-style" : ["error", "windows"],
+
         // indentation
         "indent": [2, 4, { "SwitchCase": 1 }],
 
