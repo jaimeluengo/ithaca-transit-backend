@@ -2,7 +2,7 @@
 
 ## Install
 
-Please ensure `npm` ([npm](https://www.npmjs.com/get-npm)), `wget`, and `mvn` ([Maven](https://maven.apache.org/download.cgi)) are installed by checking `wget -V`, `npm -v`, and `mvn -v`. Install any missing programs or the process will be unable to run.
+Please ensure `npm` ([npm](https://www.npmjs.com/get-npm)), `wget`, and `mvn` ([Maven](https://maven.apache.org/download.cgi)) are installed by checking `wget -V`, `npm -v`, and `mvn -v`. Windows users will need to use some sort of unix-like environment, and then manually install wget, npm, and Maven. Install any missing programs or the process will be unable to run.
 
 To correctly configure your environment, clone the repository and navigate to the directory in your terminal. Run `cp env.template .env` or manually copy the `env.template` file to `.env`. (Note: The server cannot be bound to port 80 and must use port 3000 when running locally.) Then add the correct value for `TOKEN` in `.env` with `vim .env` or another text editor. The `TOKEN` value is pinned in the #transit-backend Slack channel. 
 
@@ -21,7 +21,7 @@ The Transit API relies on the graphhopper service for navigation directions, so 
 ````
 Exception in thread "main" java.net.BindException: Address already in use
 ````
-Run `npm run cleanup` to kill any GraphHopper processes and try again. The GraphHopper services cannot be restarted if the ports (default 8989 and 8988) are already in use.
+Run `npm run cleanup` to kill any GraphHopper processes and try again. The GraphHopper services cannot be restarted if the ports (default 8989 and 8988) are already in use. 
  
 ## Run
  

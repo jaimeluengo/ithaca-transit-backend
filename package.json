@@ -14,7 +14,7 @@
     "mapmatching": "cd map-matching && ./map-matching.sh action=start-server ; cd ..",
     "start": "npm run cleanup; npm run build && sh scripts/run.sh",
     "start-dev": "npm run init && npm run build-dev",
-    "cleanup": "killall -9 java",
+    "cleanup": "taskkill -f -im node.exe",
     "test": "jest --runInBand --noStackTrace --detectOpenHandles src/test",
     "flow": "node_modules/.bin/flow",
     "flow-stop": "node_modules/.bin/flow stop"
